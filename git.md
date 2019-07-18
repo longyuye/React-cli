@@ -39,3 +39,9 @@
         git stash apply  *取出暂存的代码
         git stash list *将当前的Git栈信息打印出来，找到对应的版本号,git stash apply 版本号 来取出对应版本。
         git stash clear *将git栈清空
+    15.合并代码
+        git merge dev *此处是合并dev到master分支（当前分支master）
+    16.删除分支
+        git branch -d dev *删除的分支不是当前正在打开的分支，使用branch -d直接删除
+        git branch -D <branch_name> *试图删除一个分支时自己还没转移到另外的分支上，Git就会给出一个警告，并拒绝该删除操作。如果坚持要删除该分支的话，就需要在命令中使用-D选项(不建议使用)
+    17.
