@@ -39,3 +39,4 @@
         git stash apply  *取出暂存的代码
         git stash list *将当前的Git栈信息打印出来，找到对应的版本号,git stash apply 版本号 来取出对应版本。
         git stash clear *将git栈清空
+        1111111111111111
