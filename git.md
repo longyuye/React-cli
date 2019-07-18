@@ -20,10 +20,10 @@
         -a 查看所有分支
     8.新建本地分支
         git branch 分支名
-    9.切换本地分支
-        git checkout 分支名
         git checkout -b 分支名 
             --创建本地分支并切换
+    9.切换本地分支
+        git checkout 分支名
     10.推送本地分支
         git push origin 本地分支名
     11.新建本地分支与远程分支关联
@@ -34,3 +34,8 @@
         git branch -vv
     13.在远程分支的基础上建立develop分支，并且让develop分支追踪origin/develop远程分支。
         git checkout -b develop origin/develop
+    14.暂存临时代码
+        git stash *暂存代码，推入git栈中，
+        git stash apply  *取出暂存的代码
+        git stash list *将当前的Git栈信息打印出来，找到对应的版本号,git stash apply 版本号 来取出对应版本。
+        git stash clear *将git栈清空
