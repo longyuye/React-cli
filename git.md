@@ -5,6 +5,7 @@
     2.git提交
         git add .
         git commit -m '提交的信息'
+        git pull
         git push
     3.查看当前状态
         git status
