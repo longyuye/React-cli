@@ -79,7 +79,6 @@
             git push origin :refs/tags/<版本号>
             旧版本Git并没有提供直接删除的方法，而我们可以通过将一个空标签替换现有标签来实现删除标签
     18.代码回滚
-        https://blog.csdn.net/ligang2585116/article/details/71094887
         1️⃣在未进行git push前的所有操作，都是在“本地仓库”中执行的。我们暂且将“本地仓库”的代码还原操作叫做“撤销”！
             情况一：文件被修改了，但未执行git add操作(working tree内撤销) 
                 git checkout fileName
@@ -100,4 +99,7 @@
                 git commit --amend -m"说明"
             情况五：已在本地进行了多次git commit操作，现在想撤销到其中某次Commit
                 git reset [--hard|soft|mixed|merge|keep] [commit|HEAD]
-                扭扭捏捏 新增文字
+        2️⃣已进行git push，即已推送到“远程仓库”中。我们将已被提交到“远程仓库”的代码还原操作叫做“回滚”！
+            
+
+        参考文献：https://blog.csdn.net/ligang2585116/article/details/71094887
