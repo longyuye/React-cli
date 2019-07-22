@@ -100,4 +100,4 @@
                 git commit --amend -m"说明"
             情况五：已在本地进行了多次git commit操作，现在想撤销到其中某次Commit
                 git reset [--hard|soft|mixed|merge|keep] [commit|HEAD]
-                
+                扭扭捏捏 新增文字
